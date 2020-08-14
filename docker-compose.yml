@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  websocketconnectiontester:
+    image: websocketconnectiontester
+    env_file:
+      - wct.env
+    build:
+      context: .
+      dockerfile: Dockerfile
